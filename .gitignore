@@ -5,6 +5,12 @@
 # 忽略环境变量文件
 .env
 
+# 忽略数据库配置文件
+*.db
+*.sqlite
+*.mysql
+
+
 # 忽略 Swagger 临时生成文件（如果不需要上传）
 swagger.json
 swagger.yaml

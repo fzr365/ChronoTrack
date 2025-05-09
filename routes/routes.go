@@ -10,8 +10,8 @@ import (
 func SetupRoutes(app *fiber.App) {
 	api := app.Group("/api")
 
-	api.Post("/register", Register)
-	api.Post("/login", Login)
+	api.Post("/register", controllers.Register)
+	api.Post("/login", controllers.Login)
 
 	task := api.Group("/tasks", middleware.JWTProtected())
 	task.Post("/", controllers.CreateTask)
