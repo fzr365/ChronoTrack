@@ -86,9 +86,9 @@ curl -X POST localhost:3000/api/tasks -H "Authorization: <JWT>" -H "Content-Type
 
 * [x] JWT Authentication
 * [x] Task CRUD
-* [ ] Task deadlines + filters (today, this week)
-* [ ] Swagger API docs
-* [ ] Docker support
+* [x] Task deadlines + filters (today, this week)
+* [x] Swagger API docs
+* [x] Docker support
 * [ ] CI with GitHub Actions
 * [ ] Unit tests for controller logic
 
