@@ -50,7 +50,7 @@ chrono-track/
 ## 🚀 Quickstart
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/chrono-track.git
+git clone https://github.com/fzr365/chrono-track.git
 cd chrono-track
 go mod tidy
 go run main.go
