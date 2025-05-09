@@ -4,10 +4,11 @@ import (
 	"log"
 	"os"
 
+	"ChronoTrack/database"
+	"ChronoTrack/routes"
+
 	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
-
-	"ChronoTrack/routes"
 
 	_ "ChronoTrack/docs"
 
