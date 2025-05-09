@@ -2,6 +2,7 @@ package routes
 
 import (
 	"ChronoTrack/controllers"
+	"ChronoTrack/middleware"
 
 	"github.com/gofiber/fiber/v2"
 )
