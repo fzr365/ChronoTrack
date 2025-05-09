@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"ChronoTrack/database"
 	"ChronoTrack/models"
 
 	"github.com/gofiber/fiber/v2"

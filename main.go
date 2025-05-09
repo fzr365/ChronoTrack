@@ -7,10 +7,22 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
 
-	"ChronoTrack/database"
 	"ChronoTrack/routes"
+
+	_ "ChronoTrack/docs"
+
+	fiberSwagger "github.com/swaggo/fiber-swagger"
 )
 
+// @title ChronoTrack API
+// @version 1.0
+// @description ChronoTrack API for task tracking
+// @host localhost:3000
+// @BasePath /
+// @schemes http
+// @securityDefinitions.apikey ApiKeyAuth
+// @in header
+// @name Authorization
 func main() {
 	err := godotenv.Load()
 	if err != nil {
@@ -22,6 +34,8 @@ func main() {
 	app := fiber.New()
 
 	routes.SetupRoutes(app)
+
+	app.Get("/swagger/*", fiberSwagger.WrapHandler)
 
 	port := os.Getenv("PORT")
 	if port == "" {
