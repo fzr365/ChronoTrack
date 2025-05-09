@@ -1,4 +1,3 @@
-// === main.go ===
 package main
 
 import (
@@ -8,18 +7,20 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/joho/godotenv"
 
-	"chrono-track/database"
-	"chrono-track/routes"
+	"ChronoTrack/database"
+	"ChronoTrack/routes"
 )
 
 func main() {
-	if err := godotenv.Load(); err != nil {
-		log.Println("No .env file found")
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
 	}
 
 	database.ConnectDB()
 
 	app := fiber.New()
+
 	routes.SetupRoutes(app)
 
 	port := os.Getenv("PORT")
