@@ -1,5 +1,3 @@
-
-```markdown
 # ChronoTrack ⏱️
 A blazing-fast, secure, and extensible task tracking backend powered by **Go**, **Fiber**, and **JWT**.
 
@@ -33,7 +31,7 @@ A blazing-fast, secure, and extensible task tracking backend powered by **Go**, 
 
 ## 🏗️ Project Structure
 
-```
+```bash
 
 chrono-track/
 ├── main.go                  # Entry point
